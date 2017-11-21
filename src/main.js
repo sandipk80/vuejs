@@ -6,7 +6,8 @@ import router from './router'
 import VueResource from "vue-resource"
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VModal from 'vue-js-modal'
-var jwplayer =  require('expose-loader?LibraryName!./jwplayer.js');
+import Vudal from 'vudal';
+var jwplayer =  require('expose-loader?LibraryName!./ydMqRiul.js');
 
 
 Vue.config.productionTip = false
@@ -17,7 +18,7 @@ Vue.use(VeeValidate);
 Vue.use(VueResource);
 Vue.use(VueYouTubeEmbed);
 Vue.use(VModal);
-
+Vue.use(Vudal);
 Vue.use(jwplayer);
 
 /* eslint-disable no-new */
@@ -26,7 +27,7 @@ new Vue(
 		el: '#app',
 		router,
 		template: '<App/>',
-		components: { App }
+		components: { App,Vudal }
 	}
 )
 
